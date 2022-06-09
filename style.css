@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+:root {
+    --section-width: 70%;
+    --section-margin-bottom: 20em;
+    --header-height: 10em;
+    --button-color: #e42d49;
+    --button-color-hover: brown;
+}
+body {
+    font-family: "Releway", sans-se rif;
+    padding: 0;
+    color: rgb(50, 50, 50);
+    background-color: white;
+}
+#header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: end;
+    background-color: white;
+    border-bottom: 5px solid var(--button-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    box-shadow: 0px 0px 30px black;
+}
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.3em;
+}
+#header-img {
+    width: 20em;
+    max-height: 100%;
+    justify-self: start;
+}
+#nav-bar {
+    grid-column: 3;
+    justify-self: end;
+}
+#nav-bar > ul {
+    display: flex;
+    list-style: none;
+    margin-right: 2em;
+}
+#nav-bar > ul > li {
+    margin-right: 1em;
+}
+#nav-bar > ul > li > a > button {
+    width: 100%;
+}
+#main {
+    display: grid;
+    grid-column: 1fr;
+}
+.section {
+    margin: auto;
+    margin-bottom: var(--section-margin-bottom);
+}
+#video {
+    display: flex;
+    margin-top: var(--header-height);
+    margin-bottom: 5em;
+}
+#video > video {
+    width: 60%;
+    margin: auto;
+}
+#view-color {
+    text-align: center;
+    width: var(--section-width);
+}
+#all-colours {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box-color {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+#view-sets {
+    text-align: center;
+    width: var(--section-width);
+}
+#all-sets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.set {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 20em;
+}
+.set > img {
+    width: 100%;
+    height: auto;
+    justify-self: center;
+}
+#features {
+    text-align: center;
+}
+#all-features {
+    display: flex;
+    flex-wrap: wrap;
+    width: var(--section-width);
+    justify-content: center;
+    margin: auto;
+}
+#all-features > div {
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+    margin: 2em;
+}
+#all-features > div > img {
+    width: 100%;
+    height: auto;
+}
+#form {
+    display: flex;
+    justify-content: center;
+}
+#form  > * {
+    margin-right: 1em;
+}
+footer > nav {
+    display: flex;
+    justify-content: center;
+}
+footer > nav > * {
+    margin-right: 10em;
+}
+p {
+    text-align: left;
+}
+button {
+    transition: 1s;
+    background: var(--button-color);
+    border: 0px;
+    padding: 1.6em;
+    padding-right: 1.3em;
+    padding-left: 1.3em;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+}
+button:hover {
+    transition: 0.5s;
+    background-color: var(--button-color-hover);
+}
+#paraph-sign-up {
+    color: var(--button-color);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#btn-top {
+    border-radius: 100%;
+    font-size: 2em;
+    padding: 1em;
+    width: 2em;
+    height: 2em;
+}
+#nav-social {
+    height: 5em;
+}
+#nav-social > a > img {
+    width: 3em;
+    height: auto;
+    cursor: pointer;
+}
+.btn-pinterest {
+    width: 4em !important;
+}
+.btn-youtube {
+    width: 7em !important;
+}
